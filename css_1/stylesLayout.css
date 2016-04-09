@@ -1,0 +1,43 @@
+#main{
+
+	width: 800px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#encabezado{
+	width: 800px;
+	height: 300px;
+	background-color: #2DB34A;
+	margin: 0px;
+	float: left;
+}
+#menu{
+	width: 800px;
+	height: 50px;
+	background-color: #666666;
+	margin: 0px;
+	float: left;
+}
+#contenido{
+	width: 500px;
+	height: 200px;
+	background-color: #FF0000;
+	margin: 0px;
+	float:  left;
+}
+#sidebar{
+	width: 300px;
+	height: 200px;
+	background-color: #CCFFFF;
+	margin: 0px;
+	float: right;
+}
+#footer{
+	width: 800px;
+	height: 30px;
+	background-color: #00FF00;
+	/*margin: 10px 10px 10px 10px;*/
+	margin: 0px;
+	float: left;
+}
