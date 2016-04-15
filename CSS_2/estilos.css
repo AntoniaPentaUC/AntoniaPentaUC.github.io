@@ -1,0 +1,151 @@
+*{margin:0;padding: 0;}
+
+body{
+	background-image: url('img/bg.png');
+	font-family: 'PT Serif', serif;
+}
+
+#left{
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	background-color: #001b1f;
+}
+
+#right{
+	position: absolute;
+	top: 0;
+	left: 330px;
+	width: 610px;
+	height: auto;
+	background-color: #fff;
+	
+	border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+
+    padding: 40px;
+}
+
+#logo{
+	border-radius: 50%;
+	margin: 50px auto 20px auto;
+	display: block;
+	transition: all 0.5s ease;
+}
+
+#logo:hover{	
+	transform: scale(1.1) rotate(-360deg);
+	transition: all 0.5s ease;
+}
+
+#left h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	color: #CfCfCf;
+	font-weight: 400;
+	margin: 0 auto;
+	width: 155px;
+}
+
+.site-description{
+	text-align: center;
+	line-height: 1.6;
+	font-size: 16px;
+	color: #CfCfCf;
+	font-weight: 400;
+	margin: 15px auto;
+	width: 200px;
+}
+
+/* ----- MENU ----- */
+
+.menu{
+	margin: 30px auto;
+	width: 70%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #CfCfCf;
+}
+
+.menu li{
+	list-style-type: none;
+}
+
+.menu li a{
+	text-align: center;
+	display: block;
+	color:#CfCfCf;
+	padding: 10px 0;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.menu li a:hover{
+	background-color: #2ba6cb;
+	color:#fff;
+	transition: all 0.2s ease-in-out;
+}
+
+
+/* ----- POST ----- */
+
+.post{
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+.fecha{
+	font-size: 10px;
+	margin-bottom: 15px;
+}
+
+.post p{
+	line-height: 1.6;
+	margin-bottom: 1em;
+}
+
+.post img{
+	margin-bottom: 1em;
+	/*width: 100%;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* ----- GALERIA FOTOS ----- */
+
+.fotos{
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+}
+
+.fotos p{
+	line-height: 1.6;
+	margin-bottom: 1em;
+}
+
+.img-galeria{
+	width:170px;
+	height:170px;
+	margin: 10px;
+	overflow:hidden;
+	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 5px solid #fff;
+	transition: all 0.2s ease-in-out;
+}
+
+.img-galeria:hover{
+	border: 5px solid #F2992E;
+	transition: all 0.2s ease-in-out;
+}
+
+.img-galeria img{
+	height: 100%;
+	display: block;
+	margin-bottom: 0 auto;text-align: center;
+}
