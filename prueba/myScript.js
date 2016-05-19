@@ -1,3 +1,12 @@
+document.onkeydown= function(){
+  document.getElementById('demo').innerHTML=window.event.keyCode;
+  var x= window.event.keyCode;
+  if(x===37){izq();}
+  if(x===39){der();}
+}
+
+
+
 function myBoton() {
 	//document.getElementById('demo').innerHTML="cosaASDASD";
 	//window.confirm("cupalo");
