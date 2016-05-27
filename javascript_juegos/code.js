@@ -1,5 +1,5 @@
-var pos=[0,1,2,3,4,5,6,7,8,9,10,11];												//posiciones
-var pares=[1,1,2,2,3,3,4,4,5,5,6,6];												//diccionario de grupos de parejas
+var pos=[0,1,2,3,4,5,6,7,8,9,10,11];			//posiciones
+var pares=[1,1,2,2,3,3,4,4,5,5,6,6];			//diccionario  de parejas
 var dicImg=['img/shelby.png','img/shelby.png','img/bmo.jpg','img/bmo.jpg',
 		    'img/giusepe.jpg','img/giusepe.jpg','img/finn.jpg','img/finn.jpg',
 			'img/pc.png','img/pc.png','img/lemonagrio.jpg','img/lemonagrio.jpg'];  //diccionario de imagenes
@@ -27,7 +27,7 @@ funcion clear: flipea todas las imagenes "boca a bajo"
 */
 function clear(){
 	var imagen= document.getElementById('b0');
-	for (var i = 0; i <12; i++) {
+	for (var i = 0; i<12; i++) {
 	imagen=document.getElementById('b'+i);
 	imagen.src="img/fondo.png";
 }
@@ -39,9 +39,12 @@ revisa que imagen fue presionada y le hace un flip.
 revisa por medio de var1 var2 y contador si es que hubo alguna
 coinsidencia.
 */
+var idSelOld='bx';
+
 function toggle(e) {
-	var idSel=e.target.id;										//vemos el id del objeto
-	
+var idSel=e.target.id;										//vemos el id del objeto
+
+if(idSelOld!=idSel){
 	if(contador==0){											
 		var1=getPar(idSel);
 		flipImg(idSel);
@@ -51,7 +54,7 @@ function toggle(e) {
 		var2=getPar(idSel);
 		flipImg(idSel);
 		contador=0;
-		if(!isMatch(var1,var2)){clear();}
+		if(!isMatch(var1,var2)){setTimeout('clear()',1000);}
 		var2=0;
 		var1=0;
 		
@@ -59,6 +62,11 @@ function toggle(e) {
 	document.getElementById('demo1').innerHTML='var1: '+var1;	//solo para debug
 	document.getElementById('demo2').innerHTML='var2: '+var2;	//solo para debug
 	document.getElementById('demo3').innerHTML='contador: '+contador;	//solo para debug
+
+idSelOld=idSel;	
+}
+else{ }
+
 }
 
 
