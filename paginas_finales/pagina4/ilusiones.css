@@ -1,0 +1,155 @@
+#encabezado{
+	width: 100%;
+	height: 350px;
+	margin: 0 0 0 0;
+	background-color: black;
+}
+#fondo{
+	width: 100%;
+    height: 350px;
+    display: block;
+}
+
+#titulo{
+  	/*
+  	line-height: 110px;
+		display: block;
+	
+	font-size: 64px;
+	z-index: 1;
+	*/
+	height: 120px;
+	top:22%;
+	left:28.5%;
+	position: absolute;
+	background-color: black;
+	display: block;
+	text-align: center;
+	padding-bottom: 5%;
+
+	color: #ff0000;
+	
+}
+#encabezado h1 {
+     font-family: cursive; 
+}
+* {margin:0; padding: 0;}
+
+body{
+	background: #F9F7F1;
+	background-color: green;
+}
+
+#contenedor{
+	background-color: #0da200;	
+	height: 100%;
+	width: 15%;
+	position: fixed;
+	top:0px;
+	left: 85%;
+}
+#contenedor h2 {
+     font-family: cursive; 
+     color: #005b5b;
+}
+* 
+#indice{
+	text-align: center;
+	margin-top: 100px;
+
+
+}
+/*PARAMETROS DEL MENU PRINCIPAL*/
+.menu{
+	position: relative;
+	width:80%;
+	top:40px;
+	margin:10px auto;
+	background-color: #dae700;	
+
+}
+
+.menu ul{
+	list-style-type: none;
+
+}
+.indice p{
+	color: #000ad9;	
+	font-family: cursive;
+}
+.menu a{
+	color: #ececec;
+	display: block;
+	font-size: 19px;
+	padding: 10px 0 10px 40px;
+	text-decoration: none;
+	transition: all linear 0.2s;
+}
+
+.menu  li:hover>a {
+	background: #2e2728;
+	color:#DF7401;
+}
+
+
+/*PARAMETROS DEL SUBMENU*/
+#definicion{
+	background-color: #d6d000;
+	position: left;
+	height:800px; 
+	width:85%;
+
+}
+#d {
+	text-align: center;
+	color: #005b5b
+}
+#causa{
+	background-color: #d6d000;
+	position: left;
+	height:850px; 
+	width:85%;
+
+}
+#ca {
+	text-align: center;
+	color: #005b5b
+}
+#consecuencia{
+	background-color: #d6d000;
+	position: left;
+	height:6000px; 
+	width:85%;
+
+}
+#co {
+	text-align: center;
+	color: #005b5b
+}
+#clasificacion{
+	background-color: #d6d000;
+	position: left;
+	height:300px; 
+	width:85%;
+}
+#clasificacion p {
+	text-align: center;
+}
+#cl {
+	text-align: center;
+	color: #005b5b
+}
+#p1 {
+    
+}
+#imagen{
+	margin-left: 35%;
+}
+#ej {
+	text-align: center;
+}
+#ejemplos{
+	background-color: #d6d000;
+	position: left;
+	height:5000px; 
+	width:85%;

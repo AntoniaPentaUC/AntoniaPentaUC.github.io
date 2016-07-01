@@ -1,0 +1,74 @@
+body{
+	background: url('background.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+
+#pie{ 
+	
+	display: inline-block;
+	position: fixed;
+	top: 97%;
+	left: 77%;	
+}
+#pie a{
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+	float: left;
+
+}
+.marcianito{
+	border-radius: 50%;
+}
+
+#nyan{
+	width: 500px;
+	height: 200px;
+}
+@-webkit-keyframes hola{
+	0%{ width:100%;}
+	50%{ width:120%;}
+	100%{ width: 100%;}
+}
+@-webkit-keyframes halo{
+	0%{position: auto 100px auto auto;}
+	50%{position: auto 213px auto auto;}
+	100%{position: auto 100px  auto auto;}
+}
+
+#poop{
+	width: 100%;
+	height:100%;
+	border-radius: 50%;
+	-webkit-animation-name: hola;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+}
+#dpoop{
+	position: absolute;
+	top: 50px;
+	right: 55px;
+}
+#dtitulo{
+	position: absolute;
+	left: 20%;
+	transform: rotate(20deg);
+	top: 40%;
+	text-align: center;
+	display: block;
+}
+#dtitulo h1{
+	font-size: 60px;
+	padding: auto auto 10px auto;
+}
+
+.marcianito {
+	height: 300px;
+	width : 300px;
+}
